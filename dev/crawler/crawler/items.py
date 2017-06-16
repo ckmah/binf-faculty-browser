@@ -8,11 +8,13 @@
 import scrapy
 
 
-class UcsfItem(scrapy.Item):
+class FacultyItem(scrapy.Item):
     # define the fields for your item here like:
+    university = scrapy.Field()
     name = scrapy.Field()
     email = scrapy.Field()
+    website = scrapy.Field()
     title = scrapy.Field()
     department = scrapy.Field()
     interests = scrapy.Field()
-    website = scrapy.Field()
+    photo = scrapy.Field()
